@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--The <input> Element
+The HTML <input> element is the most used form element.
+
+An <input> element can be displayed in many ways, depending on the type attribute.
+
+Here are some examples:
+
+Type	Description
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button-->
+
+    <h2>Text input fields</h2>
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name :</label>
+      <input type="text" id="lname" name="lname" value="Doe" />
+
+      <!--Radio-->
+      <h2>Choose your favourite language</h2>
+      <form>
+        <input type="radio" name="fave_language" id="html" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" name="fave_language" id="css" value="css" />
+        <label for="css">CSS</label><br />
+        <input
+          type="radio"
+          name="fave_language"
+          id="javascript"
+          value="javascript"
+        />
+        <label for="javascript">JAVASCRIPT</label><br />
+      </form>
+
+      <!--checkboxes-->
+      <h2>Checkboxes</h2>
+      <form action="/action_page.php">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <label for="vehicle1"> I have a bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <label for="vehicle2"> I have a car</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3"> I have a boat</label><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+      <!--The <input type="submit"> defines a button for submitting the form data to a form-handler.
+
+The form-handler is typically a file on the server with a script for processing input data.
+
+The form-handler is specified in the form's action attribute.-->
+
+      <!--The Autocomplete Attribute
+The autocomplete attribute specifies whether a form should have autocomplete on or off.
+
+When autocomplete is on, the browser automatically complete values based on values that the user has entered before.-->
+    </form>
+    <h1>The form autocomplete attribute</h1>
+
+    <p>
+      Fill in and submit the form, then reload the page, start to fill in the
+      form again - and see how autocomplete works.
+    </p>
+
+    <p>Then, try to set autocomplete to "off".</p>
+
+    <form action="/action_page.php" autocomplete="on">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" /><br /><br />
+      <input type="submit" />
+    </form>
+    <!--List of All <form> Attributes
+Attribute	Description
+accept-charset	Specifies the character encodings used for form submission
+action	Specifies where to send the form-data when a form is submitted
+autocomplete	Specifies whether a form should have autocomplete on or off
+enctype	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+method	Specifies the HTTP method to use when sending form-data
+name	Specifies the name of the form
+novalidate	Specifies that the form should not be validated when submitted
+rel	Specifies the relationship between a linked resource and the current document
+target	Specifies where to display the response that is received after submitting the form
+-->
+
+    <h2>The select element</h2>
+    <p>the select element defines a drop down list</p>
+    <form action="/action_page.php">
+      <label for="cars">Chosse a car </label>
+      <select name="cars" id="cars" size="3" multiple>
+        <option value="Volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="submit" />
+    </form>
+
+    <h2>text area</h2>
+    <p>the text area element defines a multi line input field</p>
+
+    <form action="action_page.php">
+      <textarea name="message" id="" cols="30" rows="10">
+The cat was playing in the garden
+
+  </textarea
+      >
+      <br /><br />
+      <input type="submit" />
+    </form>
+
+    <h2>The button element</h2>
+    <button type="button" onclick="alert('Hello world')">Click me</button>
+
+    <!--The <fieldset> and <legend> Elements
+The <fieldset> element is used to group related data in a form.
+
+The <legend> element defines a caption for the <fieldset> element.-->
+
+    <h2>Grouping form data with fieldset</h2>
+    <p>
+      The fieldset element is used to group related data in a form, and the
+      legend element defines a captiop for the fieldset element.
+    </p>
+    <form action="/action_ph.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name</label><br />
+        <input type="text " id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <!--The <datalist> Element
+The <datalist> element specifies a list of pre-defined options for an <input> element.
+
+Users will see a drop-down list of the pre-defined options as they input data.
+
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.-->
+    <h2>The datalist element</h2>
+    <p>
+      the datalist element specifies a list of pre defined options for an input
+      element
+    </p>
+
+    <form action="/action_page.php">
+      <input type="browser" list="browsers" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+    </form>
+
+
+    <!--The <output> Element
+The <output> element represents the result of a calculation (like one performed by a script).-->
+  <form action="/actio_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+  </form>
+
+
+  <!--HTML Form Elements
+Tag	Description
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation-->
+
+
+
+
+
+
+
+
+  <!--HTML Input Types
+Here are the different input types you can use in HTML:
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">-->
+l
+
+
+
+
+<!--Input Restrictions
+Here is a list of some common input restrictions:
+
+Attribute	Description
+checked	Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+disabled	Specifies that an input field should be disabled
+max	Specifies the maximum value for an input field
+maxlength	Specifies the maximum number of character for an input field
+min	Specifies the minimum value for an input field
+pattern	Specifies a regular expression to check the input value against
+readonly	Specifies that an input field is read only (cannot be changed)
+required	Specifies that an input field is required (must be filled out)
+size	Specifies the width (in characters) of an input field
+step	Specifies the legal number intervals for an input field
+value	Specifies the default value for an input field
+You will learn more about input restrictions in the next chapter.
+
+The following example displays a numeric input field, where you can enter a value from 0 to 100, in steps of 10. The default value is 30:-->
+<h2>Numeric steps</h2>
+<p>Depending on browser support: fixed steps will apply in the input field.</p>
+<form action="/action_fomr.php">
+  <label for="quantity">quantity</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+  <input type="submit" value="submit">
+</form>
+  </body>
+</html>

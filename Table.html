@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--to add borders - you can use collapsed to have a single liner table else leaving it as be is also fine
+to add rounded corners use (border radius) and set the radius of the corners accordingly 
+-->
+<!-- with the border style property you can add dotted, dashed, solid lines to your borders, total number of styles :-
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden   
+To align table headers use text- algin
+Use padding to increase the size of the table contents
+border-spacing creates spaces etween 2 cells;
+-->
+
+<style>
+   table, td, th{border-bottom: 1px solid black ;
+   border-collapse: collapse;
+margin: 20px;
+text-align:justify;}
+    td{
+        
+        text-align: center;
+    }
+    th{
+        
+        text-align: center;
+        padding-top: 45px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        border-spacing: 100px;
+    }
+    tr:nth-child(even){
+        background-color: cadetblue;
+        border-bottom: 1px solid black;
+    }
+</style>
+<body>
+    <!--always start with <table>-->
+    <!--<td> stands for table data-->
+        <!--<tr> stands for table row-->
+            <!--<th> stands fior table head-->
+                <!--to add specific size to  a header or row \
+                    go to their cell and write style to set the size
+                remember to specify the specific length and not percentage-->
+                <!--to add headers vertiaclly ... add one header table name in the start of every row line
+                To create a header for 2 columns or row ... use (colspan)-->
+        <table style="width: 100%;">
+            <tr>
+                <th colspan="2";> Person 1</th>
+                <th> Person 3</th>
+                </tr>
+                <tr style="height: 100cap;">
+                <td> Emil</td>
+                <td> phillipe</td>
+                <td> alex</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>14</td>
+                </tr>
+        </table>
+
+
+
+
+<!--use caption to add a title to the table
+you can do rowspan to create a single header for 2 rows-->
+
+
+
+        <table style="width: 100%;">
+            <caption style="font-size: larger;">Employees</caption>
+        <tr>
+            <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+        </tr>
+        <tr>
+            <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+        </tr>
+        <tr>
+            <th>Age</th>  
+    <td>50</td>
+    <td>94</td>
+        </tr>
+        </table>
+
+        <!--To add colours to even no. of places or odd no. of places add the command nth-child(odd/even) to the table row command in styles
+        you can do the same with ables and make a pattern-->
+
+
+
+
+
+
+        <h2>Zebra Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+<!--The <colgroup> element should be used as a container for the column specifications.
+
+Each group is specified with a <col> element.
+
+The span attribute specifies how many columns that get the style.
+
+The style attribute specifies the style to give the columns.
+-->
+
+<table>
+    <colgroup>
+        <col span="1" style="background-color: aqua;">
+    <col span="1" style="background-color: aqua;">
+</colgroup>
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+  </tr>
+  <tr>
+  <td>Peter</td>
+  <td>Griffin</td>
+  <td>$100</td>
+  </tr>
+  <tr>
+  <td>Lois</td>
+  <td>Griffin</td>
+  <td>$150</td>
+  </tr>
+  <tr>
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td>$250</td>
+  </tr>
+</table>
+
+        <!--Tag	Description
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table-->
+</body>
+</html>

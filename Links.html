@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--To style a link-->
+    <style>
+        a:link{
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited{
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover{
+            color: cornflowerblue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:active{
+            color: yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+    <a href="https://www.w3schools.com/html/html_links.asp">Html links<br></a>
+    <!--Html links target attribute
+    _self attribute opens the link on teh same tab -->
+    <a href="https://www.w3schools.com/html/html_links.asp" target="_self">Html self link<br></a>
+    <!--_blank attribute opens the link on a new tab-->
+    <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">Html blank link<br></a>
+    <!--_parent attribute opens the link on a parent frame -->
+    <a href="https://www.w3schools.com/html/html_links.asp" target="_parent">Html parent link<br></a>
+    <!--_top attribute opens the link in full body of the frame-->
+    <a href="https://www.w3schools.com/html/html_links.asp" target="_top">Html top link<br></a>
+    <!--an absolute url is a fulllwebsite
+    a relative url is a link on the same page without the  "https://www" part-->
+    <h2>Absolute urls<br></h2>
+    <a href="https://www.flipkart.com/">Flipkart<br></a>
+    <a href="https://www.amazon.in/events/greatindianfestival?tag=googmantxtmob96-21&ascsubtag=_k_Cj0KCQjw1aOpBhCOARIsACXYv-fwf2Enh05vFzYr1Rc1P-BlLXtKu7t0uyctR6OoGZg9EUqfiNeXB5QaAkl6EALw_wcB_k_&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-fwf2Enh05vFzYr1Rc1P-BlLXtKu7t0uyctR6OoGZg9EUqfiNeXB5QaAkl6EALw_wcB">Amazon<br></a>
+    <h2>Relative urls<br></h2>
+    <a href="/big-billion-days-store">Big billion days<br></a>
+    <a href="/TOSHIBA-Canvio-Basics-Portable-External/dp/B07DNQHPND/ref=b2b_gw_d_cue_uf_sccl_3/262-3688713-8577464?pd_rd_w=4asSy&content-id=amzn1.sym.617e0061-3197-4a96-a0d2-6a6cde5ffc39&pf_rd_p=617e0061-3197-4a96-a0d2-6a6cde5ffc39&pf_rd_r=ESRJHAK1A6S76FVB5J3Q&pd_rd_wg=sMvVU&pd_rd_r=a11b81dd-7e3d-46e5-a47b-f252f0ebd108&pd_rd_i=B07DNQHPND&psc=1">TOSHIBA-Canvio-Basics-Portable-External <br></a>
+    <!--ignore the relative links-->
+    <!--using image as a link source-->
+    <a href="https://www.flipkart.com/"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fretail.economictimes.indiatimes.com%2Fnews%2Fe-commerce%2Fe-tailing%2Fflipkart-launches-gen-z-fashion-platform-spoyl%2F102794604&psig=AOvVaw0s5lYWdJfZ4zKIIZOtEaRL&ust=1697350694515000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNjtjZzy9IEDFQAAAAAdAAAAABAE" alt="Html tutorial" style="width:42px;height:42px;">Big bitches<br></a>
+    <!--to open the users mail program-->
+    <a href="mailto:Shandilyachinmay@gmail.com">Send email<br></a>
+    <!--to have a button onclick, dont forget to add the the document.location and single quotations on the link-->
+    <button onclick="document.location= 'https://www.youtube.com/' ";>youtube<br></button>
+    <!--The title attribute adds extra information in a text-->
+    <a href="https://www.youtube.com/" title="Go to youtube">Youtube<br></a>
+    <!--Chapter Summary
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+-->
+<!--to create a bookmark-->
+<a href="#C4">Jump to chapter 4<br></a>
+<a href="#C10">Jump to chapter 10<br></a>
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+
+
+
+
+
+
+    
+</body>
+</html>
